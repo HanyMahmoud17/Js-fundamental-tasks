@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		input:focus {
+			border: solid 2px blue;
+		}
+	</style>
+</head>
+<body>
+    <form>
+
+		<label for="fullname">Full Name:</label>
+		<input type="text" id="fullname" name="fullname" placeholder="Enter your Name" required minlength="3">
+		<span id="name-validation" style="display:none; color:red;">Invalid name</span><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="city">City:</label>
+		<select id="city" name="city">
+			<option value="New York">aswan</option>
+			<option value="Los Angeles">cairo</option>
+			<option value="Chicago">mansoura</option>
+			<option value="Houston">geza</option>
+		</select>
+        <br><br>
+		
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br><br>
+		
+		<label for="repeatpassword">Repeat Password:</label>
+		<input type="password" id="repeatpassword" name="repeatpassword" required><br>
+		<span id="password-validation" style="display:none; color:red;">Password and Repeat Password should be the same</span><br><br>
+		
+		<label for="terms">I accept the terms and conditions:</label>
+		<input type="checkbox" id="terms" name="terms" required><br><br>
+		
+		<input type="submit" value="Register">
+	</form>
+
+
+    <div id="image-container">
+		<!-- The image will be appended here -->
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
